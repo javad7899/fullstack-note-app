@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(
   cors({
-    origin: "http://127.0.0.1:5500",
+    origin: process.env.CLIENT_URL,
   })
 );
 app.use(express.json());
